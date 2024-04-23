@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  <title> border create</title>
+  <body>
+    <section id="form">
+      <div class="container">
+        <button id="button"> button</button>
+        <div class="navigation">
+          <a href="#">home</a>
+          <a href="#"> about</a>
+          <a href="#"> contact us</a>
+          <a href="#"> terms and services</a>
+          </div>
+        </div>
+        <div class="calculator">
+          <div class="display"> <p style="text-align: right"> 00 </p></div>
+  <div class="button">
+<button class="btn" value="AC">AC</button>
+<button class="btn" value="DEL">DEL</button>
+<button class="btn" value="÷"> ÷</button>
+<button class="btn" value="×"> ×</button>
+ </div>
+ <div class="button">
+<button class="btn" value="7"> 7</button>
+<button class="btn" value="8"> 8</button>
+<button class="btn" value="9"> 9</button>
+<button class="btn" value="-"> -</button>
+        </div>
+        <div class="button">
+<button class="btn" value="4"> 4</button>
+<button class="btn" value="5"> 5</button>
+<button class="btn" value="6"> 6</button>
+<button class="btn" value="+"> +</button>
+</div>
+<div class="button">
+<button class="btn" value="1"> 1</button>
+<button class="btn" value="2"> 2</button>
+<button class="btn" value="3"> 3</button>
+<button class="btn" value="=" id="button-equa"> =</button>
+</div>
+<div class="button">
+<button class="btn" value="%"> %</button>
+<button class="btn" value="0"> 0</button>
+<button class="btn" value="."> .</button>
+</div>
+</div>
+
+        
+        </html>
+        <style>
+        *{
+          box-sizing: border-box;
+        }
+          .container{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+          }
+           #button{
+             background-color: #333;
+             color: white;
+             width: 70px;
+             height: 50px;
+             border-radius: 12px;
+             font-weight: bold;
+             font-family: sans-serif;
+             box-shadow: 0 3px 2px gray;
+           }
+         .navigation{
+           position: absolute;
+           overflow: hidden;
+           transition: height 1s;
+           width: 100%;
+           height: 0px;
+           top: 0;
+           left: 0;
+           transition: 2s ease-in-out 1s;
+           box-shadow: 0 3px 13px black;
+           background: brown;
+          
+           
+         }
+         .container:hover> .navigation{
+           height: 120px;
+        /*   background: gold; */
+           margin: 0 auto;
+           transition-duration: 2s;
+           
+         }
+            .navigation> a{
+              text-decoration: none;
+              display: block;
+              padding: 10px;
+              color: white;
+              line-height: 10px;
+            }
+            .navigation> a:hover{
+              background-color: blue;
+              color: white;
+              border: dotted grey;
+              border-radius: 17px;
+            }
+            /* dropdown list ends here */
+            body{
+   background-image linear-gradient(90deg, navy, brown, green);
+              margin: 0;
+              padding: 0;
+            }
+            /* calculator css code starts here */
+  .calculator{
+               border: 1px groove black;
+               margin: 15px;
+               width: auto;
+               height: 70vh;
+               background: teal;
+               border-radius: 10px;
+               overflow: hidden;
+             }
+             .button{
+               margin: 10px;
+               padding: 2px 5px;
+           transform: translatey(90px);
+background-image linear-gradient(120deg, lightblue, teal, brown);
+display: block;
+ 
+             }
+             button{
+               width: 70px;
+               height: 50px;
+               background: #333;
+               color: white;
+               border: none;
+    border-radius: 7px;
+     box-shadow:  -3px  -3px 3px black;
+        font-weight: bolder;
+        font-size: 20px;
+        font-family: serif;
+        margin: 0;
+      
+             }
+             button:hover{
+               background: #903c56;
+               color: #ffffff;
+               border: none;
+               font-family: serif;
+               font-weight: bold;
+               border-radius: 5.5px;
+               box-shadow: -3px -3px 3px black;
+             }
+             .display{
+               width: 270px;
+               height: 50px;
+               background: gray;
+  transform: translate(30px, 70px);
+  margin: 0;
+  border-radius: 30px;
+  outline: none;
+  border: 1px groove aqua;
+  color: white;
+  box-shadow: 0 5px 5px #333;
+             }
+             .display > p{
+               color: white;
+               font-size: 25px;
+               text-align: right;
+               text-align: center;
+               clear: both;
+               position: relative;
+               right: 15px;
+               bottom: 14px;
+              
+               
+               
+               
+             }
+             #button-equa{
+               position: absolute;
+               background: #0076ff;
+               color: white;
+               height: 7rem;
+               right: 9px;
+               text-align: center;
+              
+               
+             }
+             #button-equa:hover{
+               background: lightgreen;
+               color: brown;
+               border: none;
+               font-size: 30px;
+               font-weight: bolder;
+               font-family: sans-serif, arial, fantasy: cursive;
+               border-radius: 6px;
+               
+             }
+        </style>
